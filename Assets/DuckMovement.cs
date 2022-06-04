@@ -13,10 +13,12 @@ public class DuckMovement : MonoBehaviour {
     public int direction = 1;
 
     // Movement for ducks
-    Vector3 startPositionLeft = new(-10.5f, 2f, 0f);
-    Vector3 startPositionRight = new(10.5f, -2f, 0f);
-    Vector3 staticMovementRight = new(0.1f, 0f, 0f);
-    Vector3 staticMovementLeft = new(-0.1f, 0f, 0f);
+    static float travelSpeed = 0.075f;
+    static float startPosition = 12f;
+    Vector3 startPositionLeft = new Vector3(-startPosition, 2f, 0f);
+    Vector3 startPositionRight = new(startPosition, -2f, 0f);
+    Vector3 staticMovementRight = new(travelSpeed, 0f, 0f);
+    Vector3 staticMovementLeft = new(-travelSpeed, 0f, 0f);
 
     Renderer renderer;
 
