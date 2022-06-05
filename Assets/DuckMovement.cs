@@ -12,10 +12,10 @@ public class DuckMovement : MonoBehaviour {
     // Direction = -1: Move to the left
     public int direction = 1;
 
-    // Movement for ducks
-    static float travelSpeed = 0.2f;
-    Vector3 startPositionLeft = new(-20.2f, 1.5f, 0f);
-    Vector3 startPositionRight = new(19.7f, -3.5f, 0f);
+    // Movement and positions for ducks
+    static readonly float travelSpeed = 0.2f;
+    Vector3 startPositionLeft = new(-26f, 2.5f, 0f);
+    Vector3 startPositionRight = new(27f, -4f, 0f);
     Vector3 staticMovementRight = new(travelSpeed, 0f, 0f);
     Vector3 staticMovementLeft = new(-travelSpeed, 0f, 0f);
 
